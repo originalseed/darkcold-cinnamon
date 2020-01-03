@@ -374,21 +374,30 @@ StScrollBar StButton#vhandle:hover
     app-icon-bottom-clip: 2px;
 }
 
-.panel-button {
+.panel-button,
+.window-list-item-box,
+.grouped-window-list-item-box {
     color: #6EBEFE;
-    -natural-hpadding: 5px;
-    -minimum-hpadding: 5px;
     font-weight: normal;
     transition-duration: 150;
+    border-image: url("button-normal.png") 3 3 3 3 stretch stretch;
 }
 
-.panel-button:hover {
+.panel-button:hover,
+.window-list-item-box:hover,
+.window-list-item-box:checked:hover,
+.grouped-window-list-item-box:hover {
     border-image: url("button-prelight.png") 3 3 3 3 stretch stretch;
 }
 
 .panel-button:active,
 .panel-button:overview,
-.panel-button:focus {
+.grouped-window-list-item-box:active,
+.grouped-window-list-item-box:overview{
+
+}
+.panel-button:focus,
+.grouped-window-list-item-box:focus {
 	border-image: url("button-prelight.png") 3 3 3 3 stretch stretch;
 }
 
@@ -1664,7 +1673,7 @@ StScrollBar StButton#vhandle:hover
  * ===================================================================*/
 .window-list-box {
     spacing: 0;
-    padding-top: 1px;   
+    padding: 1px 0 0 0;
 }
 
 .window-list-item-label {
@@ -1676,7 +1685,8 @@ StScrollBar StButton#vhandle:hover
 .window-list-item-box {
 	color:#6EBEFE;
     border-image: url("button-normal.png") 3 3 3 3 stretch stretch;
-margin: 0 3px 0 0;
+    margin: 0;
+    padding: 0;
 }
 
 .window-list-item-box:active,
@@ -1688,10 +1698,9 @@ margin: 0 3px 0 0;
 .window-list-item-box:hover  {     
     border-image: url("button-prelight.png") 3 3 3 3 stretch stretch;
 }
-/** TODO **/
+
 .window-list-item-demands-attention {
-    background-gradient-start: rgba(255,52,52,0.5);
-	 background-gradient-end: rgba(255,144,144,0.9);
+    border-image: url("menubar-item-active.png") 3 3 3 3 stretch stretch;
 }
 
 /* ===================================================================

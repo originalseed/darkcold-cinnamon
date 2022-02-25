@@ -356,7 +356,7 @@ StScrollBar StButton#vhandle:hover
 .panel-corner:active,
 .panel-corner:overview,
 .panel-corner:focus {
-		border-image: url("button-prelight.png") 3 3 3 3 stretch stretch;
+    border-image: url("button-prelight.png") 3 3 3 3 stretch stretch;
     transition-duration: 50;
 }
 
@@ -2101,10 +2101,9 @@ max-height: 100px;
 }
 .applet-label {	
 	font-weight: bold;
-	color: #6EBEFE;		
+	color: #6EBEFE;
 }
-.applet-label:hover,
-.applet-box:hover > .applet-label {
+.applet-box:hover .applet-label {
 	color: #6EBEFE;
 	text-shadow: white 0px 0px 5px;
 }
@@ -2112,8 +2111,7 @@ max-height: 100px;
 	color: #6EBEFE;
 	icon-size: 22px;
 }
-.applet-icon:hover,
-.applet-box:hover > .applet-icon {
+.applet-box:hover .applet-icon {
 	color: #6EBEFE;
 	icon-shadow: white 0px 0px 3px;
 }
